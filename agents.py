@@ -22,7 +22,7 @@ def get_llm() -> LLM:
             "See .env.example for the required format."
         )
     return LLM(
-        model="google/gemini-3.8-flash",
+        model="gemini-3.5-flash-lite",
         api_key=api_key,
         temperature=0.3,  # Lower temperature for more consistent, factual outputs
     )
