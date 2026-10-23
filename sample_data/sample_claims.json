@@ -1,0 +1,44 @@
+[
+  {
+    "id": "sample_1",
+    "label": "Sample 1 — Normal Hospitalization (Appendectomy)",
+    "description": "Standard hospitalization claim with all documents. Expected: Likely Eligible.",
+    "claim_type": "Hospitalization",
+    "hospital_name": "Apollo Hospitals, Chennai",
+    "treatment_description": "Appendectomy (surgical removal of appendix) due to acute appendicitis. Patient was admitted for 3 days post-surgery.",
+    "claim_amount": 85000,
+    "policy_coverage_limit": 500000,
+    "waiting_period_satisfied": true,
+    "coverage_categories": ["Hospitalization", "Surgical Procedures", "In-patient Treatment"],
+    "documents_provided": ["Hospital Bill", "Discharge Summary", "Medical Reports", "ID Proof"],
+    "additional_info": "Patient was admitted on an emergency basis. Surgeon Dr. Ramesh Verma performed the appendectomy. Recovery was uneventful. Patient discharged on Day 3."
+  },
+  {
+    "id": "sample_2",
+    "label": "Sample 2 — Missing Documents (Knee Surgery)",
+    "description": "Hospitalization claim with several missing required documents. Expected: Requires Review.",
+    "claim_type": "Hospitalization",
+    "hospital_name": "Fortis Hospital, Bangalore",
+    "treatment_description": "Arthroscopic knee surgery for ligament repair following sports injury.",
+    "claim_amount": 120000,
+    "policy_coverage_limit": 300000,
+    "waiting_period_satisfied": true,
+    "coverage_categories": ["Hospitalization", "Surgical Procedures"],
+    "documents_provided": ["Hospital Bill", "ID Proof"],
+    "additional_info": "Patient is a 28-year-old with a sports injury. The hospital has submitted only the billing documents so far. Discharge summary and medical reports are pending from the hospital."
+  },
+  {
+    "id": "sample_3",
+    "label": "Sample 3 — Coverage Concern (Dental Treatment)",
+    "description": "Claim for a treatment not covered under policy and waiting period not satisfied. Expected: Requires Review with concerns.",
+    "claim_type": "Medical",
+    "hospital_name": "Smile Dental Clinic, Mumbai",
+    "treatment_description": "Dental implant procedure for missing molars — cosmetic and restorative dental work.",
+    "claim_amount": 45000,
+    "policy_coverage_limit": 200000,
+    "waiting_period_satisfied": false,
+    "coverage_categories": ["Hospitalization", "Emergency Treatment", "In-patient Treatment"],
+    "documents_provided": ["Hospital Bill", "Prescription", "ID Proof"],
+    "additional_info": "Patient enrolled in the policy only 4 months ago. The treatment was elective and performed at an outpatient dental clinic. Policy has a 12-month waiting period for dental procedures."
+  }
+]
